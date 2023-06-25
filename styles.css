@@ -88,10 +88,10 @@ header {
   display: flex;
   align-items: center;
   margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .tech-stack-item img {
-  /* width: 25px; */
   flex: 1;
   height: 25px;
   margin-right: 5px;
