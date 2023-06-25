@@ -1,5 +1,5 @@
- /* Reset CSS */
- * {
+/* Reset CSS */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,8 +25,8 @@ header {
   object-fit: cover;
   margin-bottom: 10px;
   margin-top: 20px;
-  float: left; /* Tambahkan aturan float */
-  margin-right: 20px; /* Tambahkan margin kanan untuk memberi jarak antara foto profil dan teks */
+  float: left;
+  margin-right: 20px;
 }
 
 .profile-container {
@@ -91,7 +91,8 @@ header {
 }
 
 .tech-stack-item img {
-  width: 25px;
+  /* width: 25px; */
+  flex: 1;
   height: 25px;
   margin-right: 5px;
 }
@@ -152,6 +153,7 @@ header {
 #social-media .social-icons li {
   margin-right: 5px;
 }
+
 .name {
   font-size: 24px;
   font-weight: bold;
@@ -160,4 +162,50 @@ header {
 .role {
   font-size: 18px;
   color: #666;
+}
+
+/* Profile Table */
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-table th,
+.profile-table td {
+  padding: 10px;
+  /* border: 0px solid #ddd; */
+}
+
+.profile-table th {
+  width: 10%;
+  /* background-color: #f2f2f2; */
+  font-weight: bold;
+  text-align: left;
+}
+
+.profile-table td {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .profile-table th,
+  .profile-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .profile-table th {
+    background-color: transparent;
+    border: none;
+    font-weight: normal;
+  }
+}
+
+#education .timeline-content p {
+  margin-left: 44px;
+}
+
+.project{
+  margin-left: 44px;
+  margin-bottom: 25px;
 }
